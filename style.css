@@ -1,0 +1,130 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #795C34;
+  color: white;
+  width: 100%;
+}
+
+.nav-top {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav-top a {
+  color: white;
+}
+
+.nav-menus-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-menu a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-menu.active {
+  background-color: forestgreen;
+}
+
+.content-wrapper {
+  margin: 30px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+}
+
+.content-wrapper a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.blog-post-wrapper {
+  display: grid;
+  grid-template-areas:
+  'pic pic pic pic pic'
+  'title title title space date'
+  'hint hint hint hint hint';
+  cursor: pointer;
+  border: 1px solid gray;
+  height: 300px;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,200,0,0.4);
+  transition: 0.3s;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.blog-post-wrapper img {
+  grid-area: pic;
+  width: 100%;
+  height: 200px;
+}
+
+.blog-post-wrapper .blog-title {
+  margin: 10px;
+  grid-area: title;
+  color: forestgreen;
+}
+
+.blog-post-wrapper .date {
+  margin: 10px;
+  grid-area: date;
+}
+
+.blog-post-wrapper p {
+  margin: 10px;
+  grid-area: hint;
+}
+
+.blog-post-wrapper:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,200,0,0.4);
+}
+
+.blog-post-wrapper .date {
+  color: gray;
+  font-size: 0.8em;
+}
+
+/* Blog page styles */
+.content-wrapper-blog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.content-wrapper-blog img{
+  width: 100%;
+}
+
+.content-wrapper-blog .blog-text{
+  padding: 0px 30px;
+}
+
+
+/* footer styles */
+.footer {
+  padding: 10px;
+  width: 100%;
+  height: 200px;
+  background-color: #795c34;
+  color: white;
+}
