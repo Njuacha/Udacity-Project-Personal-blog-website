@@ -1,0 +1,23 @@
+/* Blog page styles */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main img{
+  width: 100%;
+  margin: auto;
+}
+
+main > .blog-text-wrapper {
+  padding: 0px 30px;
+}
+
+main > .blog-text-wrapper > .author{
+  color: forestgreen;
+  font-style: italic;
+}
+
+main > .blog-text-wrapper > .date-written {
+  color: gray;
+}

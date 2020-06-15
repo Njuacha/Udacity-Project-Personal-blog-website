@@ -1,6 +1,6 @@
 /* Content styles */
 
-.content-wrapper {
+main {
   margin: 30px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -8,7 +8,7 @@
   grid-row-gap: 10px;
 }
 
-.content-wrapper a {
+main a {
   color: inherit;
   text-decoration: inherit;
 }
@@ -58,29 +58,4 @@
 .blog-post-wrapper .date {
   color: gray;
   font-size: 0.8em;
-}
-
-
-/* Blog page styles */
-.content-wrapper-blog {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.content-wrapper-blog img{
-  width: 100%;
-  margin: auto;
-}
-
-.content-wrapper-blog > .blog-text-wrapper {
-  padding: 0px 30px;
-}
-
-.content-wrapper-blog > .blog-text-wrapper > .author{
-  color: forestgreen;
-  font-style: italic;
-}
-
-.content-wrapper-blog > .blog-text-wrapper > .date-written {
-  color: gray;
 }
