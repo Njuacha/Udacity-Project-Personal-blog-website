@@ -1,11 +1,22 @@
 /* Content styles */
 
 main {
-  margin: 30px 20px;
+  margin: 20px 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+ main {
+   margin: 30px 20px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-column-gap: 20px;
+   grid-row-gap: 10px;
+ }
+
 }
 
 main a {
@@ -21,7 +32,6 @@ main a {
   'hint hint hint hint hint';
   cursor: pointer;
   border: 1px solid gray;
-  height: 300px;
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,200,0,0.4);
   transition: 0.3s;

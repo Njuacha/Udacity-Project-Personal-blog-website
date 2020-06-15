@@ -21,6 +21,7 @@ header {
   align-items: center;
   width: 100%;
   box-sizing: border-box;
+  font-size: x-small;
 }
 
 .nav-top a {
@@ -29,8 +30,19 @@ header {
 }
 
 .nav-top img {
-  width: 32px;
-  height: 32px;
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-top {
+    font-size: initial;
+  }
+
+  .nav-top img {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .nav-menus-wrapper {

@@ -1,7 +1,7 @@
 /* Blog page styles */
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 main img{
@@ -10,7 +10,7 @@ main img{
 }
 
 main > .blog-text-wrapper {
-  padding: 10px 30px;
+  padding: 10px 20px;
 }
 
 main > .blog-text-wrapper > .author-and-datewritten {
@@ -24,4 +24,17 @@ main > .blog-text-wrapper > .author-and-datewritten > .author{
 
 main > .blog-text-wrapper > .author-and-datewritten > .date-written {
   color: gray;
+}
+
+/* Styles for screens larger than 768px */
+@media only screen and (min-width: 786px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main > .blog-text-wrapper {
+    padding: 10px 30px;
+  }
+
 }
