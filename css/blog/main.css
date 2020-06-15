@@ -10,14 +10,18 @@ main img{
 }
 
 main > .blog-text-wrapper {
-  padding: 0px 30px;
+  padding: 10px 30px;
 }
 
-main > .blog-text-wrapper > .author{
+main > .blog-text-wrapper > .author-and-datewritten {
+  display: flex;
+  justify-content: space-between;
+}
+
+main > .blog-text-wrapper > .author-and-datewritten > .author{
   color: forestgreen;
-  font-style: italic;
 }
 
-main > .blog-text-wrapper > .date-written {
+main > .blog-text-wrapper > .author-and-datewritten > .date-written {
   color: gray;
 }
